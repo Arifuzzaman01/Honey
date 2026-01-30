@@ -3,13 +3,13 @@ import React from "react";
 
 const Animate = () => {
   return (
-    <div className="relative mt-10">
-      <div className="absolute left-0 upDown">
+    <div className="relative mt-16">
+      <div className="absolute left-0  upDown">
         <Image
           src={
             "https://preview.funnelliner.xyz/images/landing-10/honey_layer.svg"
           }
-          width={150}
+          width={180}
           height={100}
           alt="animate1"
         />
@@ -19,7 +19,7 @@ const Animate = () => {
           src={
             "https://preview.funnelliner.xyz/images/landing-10/honey_layer.svg"
           }
-          width={150}
+          width={180}
           height={100}
           alt="animate2"
           className="-scale-x-100"

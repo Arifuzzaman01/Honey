@@ -18,7 +18,7 @@ const Banner = () => {
       className="w-screen "
     >
       <div className="max-w-6xl mx-auto pt-6 pb-16 px-4">
-        <div className="cursor-pointer ml-2">
+        <div className="cursor-pointer ml-2 w-fit">
           <Image
             src={
               "https://preview.funnelliner.xyz/_next/static/media/logo9.d342680c.svg"

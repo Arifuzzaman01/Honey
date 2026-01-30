@@ -1,15 +1,19 @@
 import Animate from "@/components/Animate";
 import Banner from "@/components/Banner";
 import Feature from "@/components/Feature";
+import Footer from "@/components/Footer";
 import HoneyJar from "@/components/HoneyJar";
 import HotLine from "@/components/HotLine";
 import Knowledge from "@/components/Knowledge";
+import OrderForm from "@/components/OrderForm";
 import OrderNow from "@/components/OrderNow";
+import Review from "@/components/Review";
 import Video from "@/components/Video";
+import WhyBye from "@/components/WhyBye";
 
 export default function Home() {
   return (
-    <div className="   bg-white font-sans dark:bg-white overflow-hidden space-y-12 px-3 sm:px-5 lg:px-0">
+    <div className=" max-w-7xl mx-auto   bg-[#ffffff] font-sans dark:bg-[#ffffff] overflow-hidden space-y-12 px-3 sm:px-5 lg:px-0">
       <Banner />
       <HotLine />
       <HoneyJar />
@@ -18,8 +22,10 @@ export default function Home() {
       <Feature />
       <Knowledge />
       <OrderNow />
-      <h1>abc</h1>
-
+      <WhyBye />
+      <OrderForm />
+      <Review />
+      <Footer />
     </div>
   );
 }

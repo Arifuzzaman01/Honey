@@ -59,13 +59,13 @@ body {
 
 @keyframes moveUpDown {
   0% {
-    transform: translateY(0);
+    transform: translateY(-10);
   }
   50% {
-    transform: translateY(-40px);
+    transform: translateY(-70px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-10);
   }
 }
 
@@ -77,7 +77,7 @@ body {
   word-spacing: 7px;
 }
 .beeAnimate {
-  animation: flingBee 6s cubic-bezier(0.45, 0.05, 0.55, 0.95)  infinite;
+  animation: flingBee 6s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
   will-change: transform, opacity;
 }
 
@@ -123,7 +123,7 @@ body {
 
   90% {
     transform: translate(-120px, -400px) rotate(-30deg);
-    opacity: 0.4
+    opacity: 0.4;
   }
 
   100% {
@@ -132,4 +132,36 @@ body {
   }
 }
 
+.animated-text {
+  font-size: 40px;
+  font-weight: 700;
 
+  background: linear-gradient(
+    -225deg,
+    #231557,
+    #e0aa55 29%,
+    #ff1361 67%,
+    #ffbf0b
+  );
+
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+
+  animation: gradientFlow 5s linear infinite;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: -100% 0%;
+  }
+  
+  100% {
+    background-position: 100% 0%;
+  }
+}
+.card-shadow{
+ box-shadow: 0 -68px 80px rgb(0 0 0 / 3%), 0 35px 46.8519px rgb(0 0 0 / 2%), 0 -3px 25.4815px rgb(0 0 0 / 2%), 0 20px 13px rgb(0 0 0 / 2%), 0 8.14815px 6.51852px rgb(0 0 0 / 1%), 0 1.85185px 3.14815px rgb(0 0 0 / 1%);
+}
